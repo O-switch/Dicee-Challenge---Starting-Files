@@ -48,5 +48,5 @@ reset.addEventListener('click', () => {
 
     document.querySelectorAll('img')[1]
         .setAttribute('src', "images/dice6.png");
-    document.querySelector("h1").innerHTML = "Refresh Me";
+    document.querySelector("h1").innerHTML = "Dice 🎲🎲";
 });
