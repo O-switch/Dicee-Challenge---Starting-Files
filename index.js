@@ -17,7 +17,9 @@
 // }
 
 // using button to start the game
-var play = document.querySelector('button')
+var play = document.querySelector('#start');
+var reset = document.querySelector('#reset');
+
 play.addEventListener('click', () => {
 
     let randomNumber1 = Math.floor(Math.random() * 6) + 1;
@@ -38,4 +40,13 @@ play.addEventListener('click', () => {
         document.querySelector("h1").innerHTML = "Draw!";
     }
 
+});
+
+// reset button to set the gae back to the initial state
+reset.addEventListener('click', () => {
+    document.querySelectorAll('img')[0].setAttribute('src', "images/dice6.png");
+
+    document.querySelectorAll('img')[1]
+        .setAttribute('src', "images/dice6.png");
+    document.querySelector("h1").innerHTML = "Refresh Me";
 });
